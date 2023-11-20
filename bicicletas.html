@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bicicletas | Bikcraft</title>
+<script>
+    document.documentElement.classList.add("js");
+  </script>
 </head>
 <meta name="descripition" content="Bicicletas.">
+<link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="CSS/style.css" as="style">
 <link rel="stylesheet" href="CSS/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +41,7 @@
     </div>
     
     
-      <div class="bicicletas container">
+      <div class="bicicletas container fadeInLeft" data-anime="200">
         <div class="bicicletas-imagem">
           <img src="img/bicicletas/nimbus.jpg" alt="Bicicleta preta">
           <span class="font-2-m cor-0">R$ 4999</span>
@@ -59,7 +64,7 @@
       </div>
     
 
-    <div class="bicicletas-bg">
+    <div class="bicicletas-bg fadeInLeft" data-anime="400">
       <div class="bicicletas container">
         <div class="bicicletas-imagem">
           <img src="img/bicicletas/magic.jpg" alt="Bicicleta preta">
@@ -84,7 +89,7 @@
     </div>
 
     
-      <div class="bicicletas container">
+      <div class="bicicletas container fadeInLeft" data-anime="600">
         <div class="bicicletas-imagem">
           <img src="img/bicicletas/nebula.jpg" alt="Bicicleta preta">
           <span class="font-2-m cor-0">R$ 3999</span>
@@ -149,5 +154,7 @@
     </div>
   </footer>
 <!-- Fim rodapé -->
+<script src="js/plugins/simple-anime.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
